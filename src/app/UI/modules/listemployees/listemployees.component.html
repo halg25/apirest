@@ -1,0 +1,20 @@
+<p>listemployees works!</p>
+<table class="table">
+    <thead>
+      <tr>
+        <th scope="col">Id</th>
+        <th scope="col">Nombre</th>
+        <th scope="col">Rol</th>
+      </tr>
+    </thead>
+    <tbody>
+      <div *ngFor="let employees of listEmployeesModel">
+      <tr>  
+        <th scope="row">{{employees.id}}</th>
+        <th scope="row">{{employees.name}}</th>
+        <th scope="row">{{employees.role}}</th>
+      </tr>
+    </div>
+     </tbody>
+  </table>
+  

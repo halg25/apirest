@@ -1,0 +1,11 @@
+<p>newemployees works!</p>
+<h1>Registrar Empleado</h1>
+<br><br>
+<form #formularioNewEmployees="ngForm" (ngSubmit)="newEmployees()">
+	<input type="text" name="name" placeholder="Nombre" [(ngModel)]="newEmployeesModel.name">
+	<br><br>
+	<input type="text" name="rol" placeholder="Rol" [(ngModel)]="newEmployeesModel.role">
+	<br><br>
+	<button type="submit">Guardar</button>
+</form>
+
