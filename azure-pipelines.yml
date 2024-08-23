@@ -1,0 +1,22 @@
+# Starter pipeline
+# Start with a minimal pipeline that you can customize to build and deploy your code.
+# Add steps that build, run tests, deploy, and more:
+# https://aka.ms/yaml
+
+trigger:
+- main
+
+pool:
+  vmImage: ubuntu-latest
+
+variables:
+ ruta_origen: '/sftp'
+ ruta_destino: '/sftp/camara'
+
+steps:
+
+- script: |
+    echo "Nombre del archivo: $(nombre_archivo)"
+  displayName: "Ejecutar script mover_arcivo.sh"
+  env:
+    nombre_archivo: $(nombre_archivo)
