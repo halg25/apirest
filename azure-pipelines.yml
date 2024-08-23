@@ -10,8 +10,8 @@ pool:
   vmImage: ubuntu-latest
 
 variables:
- ruta_origen: '/sftp'
- ruta_destino: '/sftp/camara'
+ ruta_origen: $(ruta_origen)
+ ruta_destino: $(ruta_destino)
 
 steps:
 
